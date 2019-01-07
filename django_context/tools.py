@@ -3,15 +3,15 @@ from time import time
 from threading import current_thread
 
 
+_THREAD_STORAGES = {}
+
+
 USER_KEY = 'user'
 REQUEST_ID_KEY = 'request_id'
 DJANGO_REQUEST_KEY = 'django_request'
 DJANGO_RESPONSE_KEY = 'django_response'
 RESPONSE_DURATION_KEY = 'response_duration'
 REQUEST_START_TIME = 'request_start_time'
-
-
-_THREAD_STORAGES = {}
 
 
 def _get_thread_key():

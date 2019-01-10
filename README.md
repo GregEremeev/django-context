@@ -20,7 +20,7 @@ pip install django-context
 3 Add proxy middleware to your MIDDLEWARE setting like this:
 ```Python
 MIDDLEWARE = [
-    'django_context.middleware.ProxyMiddleware',
+    'django_context.middlewares.ProxyMiddleware',
     ...
 ]
 ```
